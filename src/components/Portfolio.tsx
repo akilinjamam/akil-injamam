@@ -1,7 +1,7 @@
 'use client'
 
-import {  motion } from 'framer-motion'
-import {  ExternalLink } from 'lucide-react'
+import { motion } from 'framer-motion'
+import { ExternalLink } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import profile from '../../public/images/my-passport-size photo-300by300px.jpg'
@@ -14,21 +14,21 @@ export default function Portfolio() {
       title: 'ERP POS System',
       description:
         'Full-featured POS & ERP software with payroll, sales, barcode scanning, reporting, and PDF invoice generation etc.',
-      tech: ['Vite js','Node js', 'Express', 'Mongodb', 'Chart js',  'Redux', 'JWT',],
+      tech: ['Vite js', 'Node js', 'Express', 'Mongodb', 'Chart js', 'Redux', 'JWT',],
       link: 'https://portfolio-erp-pos-optical-soft-clie.vercel.app/login',
     },
     {
       title: 'Optical E-commerce Platform',
       description:
         'Modern optical shop website with product management, online orders with online booking and real time communication between patient and doctor.',
-      tech: ['Next.js', 'TypeScript', 'node js', 'express',  'MongoDB', 'Agora RTC'],
+      tech: ['Next.js', 'TypeScript', 'node js', 'express', 'MongoDB', 'Agora RTC'],
       link: 'https://eyelineoptica.com',
     },
     {
       title: 'Optical E-commerce Dashboard',
       description:
         'Managing all contents ,Doctor-patient consultation system with authentication, booking, and real-time communication.',
-      tech: ['Vite js','Typescript',  'Redux', 'Framer Motion', 'Shadcn', 'Agora RTC'],
+      tech: ['Vite js', 'Typescript', 'Redux', 'Framer Motion', 'Shadcn', 'Agora RTC'],
       link: 'https://adorable-churros-a5462d.netlify.app',
     },
     {
@@ -52,7 +52,7 @@ export default function Portfolio() {
       tech: ['Vite js', 'Node js', 'Express', 'Typescript'],
       link: 'https://s3-file-upload-akilinjamam.netlify.app',
     },
-    
+
   ]
 
   return (
@@ -111,7 +111,7 @@ export default function Portfolio() {
 
               {/* Profile Placeholder */}
               <div className="relative z-10 w-full h-full rounded-full border border-border backdrop-blur-xl bg-background/60 flex items-center justify-center text-6xl font-bold">
-                <Image className='rounded-full' width={600} height={600} src={profile} alt='my-profile'/>
+                <Image className='rounded-full' width={600} height={600} src={profile} alt='my-profile' />
               </div>
             </div>
           </motion.div>
@@ -176,11 +176,11 @@ export default function Portfolio() {
                     ))}
                   </div>
                   <Link href={`${project.link}`} target="_blank" rel="noopener noreferrer">
-                      <Button
-                        variant="ghost"
-                        className="flex items-center gap-2 text-cyan-400"
-                      >
-                        View Project <ExternalLink size={16} />
+                    <Button
+                      variant="ghost"
+                      className="flex items-center gap-2 text-cyan-400"
+                    >
+                      View Project <ExternalLink size={16} />
                     </Button>
                   </Link>
                 </CardContent>
@@ -190,18 +190,18 @@ export default function Portfolio() {
         </div>
       </section>
 
-       {/* Skills */}
+      {/* Skills */}
       <section id="skills" className="py-24 px-6 ">
         <h2 className="text-3xl font-bold mb-16 text-center">My Skills</h2>
         <div className=" mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {[
             { category: 'Language', items: ['Javascript', 'Typescript'] },
-            { category: 'Frontend', items: ['React', 'Next.js','Redux', 'Tailwind CSS', 'Bootstrap', 'SCSS', 'DaisyUI', 'Shadcn/ui', 'React Hook Form'] },
+            { category: 'Frontend', items: ['React', 'Next.js', 'Redux', 'Tailwind CSS', 'Bootstrap', 'SCSS', 'DaisyUI', 'Shadcn/ui', 'React Hook Form'] },
             { category: 'Backend', items: ['Node.js', 'Express.js', 'MongoDB', 'PostgreSQL', 'GraphQL', 'REST APIs'] },
             { category: 'Database', items: ['MongoDB', 'Mongoose', 'PostgreSQL', 'Prisma'] },
             { category: 'Cloud', items: ['AWS', 'S3', 'EC2', 'VPS'] },
             { category: 'Tools', items: ['Git', 'GitHub', 'VS code', 'Cursor ai', 'postman', 'mongoDB compass', 'Netlify', 'Figma', 'Chrome DevTools', 'Adobe illustrator', 'Adobe Photoshop'] },
-            { category: 'Tools', items: ['Chart js', 'PDF Generator'] },
+            { category: 'Data Visualization & Reporting:', items: ['Chart js', 'PDF Generator'] },
           ].map((skillGroup, index) => (
             <motion.div
               key={index}
@@ -231,7 +231,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-      
+
 
       {/* Contact Section */}
       {/* <section className="py-20 text-center">
