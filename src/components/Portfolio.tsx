@@ -35,14 +35,14 @@ export default function Portfolio() {
       title: 'KeyCraft Elit_',
       description:
         'This site is an online store for mechanical keyboards called “KeyCraft Elit,” focused on typing and gaming enthusiasts.',
-      tech: ['Vite js', 'Node js', 'Express', 'Typescript'],
+      tech: ['Vite js', 'Node js', 'Express', 'Typescript', 'mongoDB', 'Redux'],
       link: 'https://level-2-24-assignment-4-client.vercel.app',
     },
     {
       title: 'RoomBridge',
       description:
         'RoomBridge is a meeting room booking website that offers real-time availability, instant confirmation, and flexible scheduling for modern conference spaces',
-      tech: ['Vite js', 'Node js', 'Express', 'Typescript'],
+      tech: ['Vite js', 'Node js', 'Express', 'Typescript',  'mongoDB', 'Redux'],
       link: 'https://level-2-24-assignment-5-client.vercel.app',
     },
     {
