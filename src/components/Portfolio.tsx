@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import profile from '../../public/images/my-passport-size photo-300by300px.jpg'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Portfolio() {
   const projects = [
@@ -14,22 +15,44 @@ export default function Portfolio() {
       description:
         'Full-featured POS & ERP software with payroll, sales, barcode scanning, reporting, and PDF invoice generation etc.',
       tech: ['Vite js','Node js', 'Express', 'Mongodb', 'Chart js',  'Redux', 'JWT',],
-      link: '#',
+      link: 'https://portfolio-erp-pos-optical-soft-clie.vercel.app/login',
     },
     {
       title: 'Optical E-commerce Platform',
       description:
         'Modern optical shop website with product management, online orders with online booking and real time communication between patient and doctor.',
       tech: ['Next.js', 'TypeScript', 'node js', 'express',  'MongoDB', 'Agora RTC'],
-      link: '#',
+      link: 'https://eyelineoptica.com',
     },
     {
       title: 'Optical E-commerce Dashboard',
       description:
         'Managing all contents ,Doctor-patient consultation system with authentication, booking, and real-time communication.',
       tech: ['Vite js','Typescript',  'Redux', 'Framer Motion', 'Shadcn', 'Agora RTC'],
-      link: '#',
+      link: 'https://adorable-churros-a5462d.netlify.app',
     },
+    {
+      title: 'KeyCraft Elit_',
+      description:
+        'This site is an online store for mechanical keyboards called “KeyCraft Elit,” focused on typing and gaming enthusiasts.',
+      tech: ['Vite js', 'Node js', 'Express', 'Typescript'],
+      link: 'https://level-2-24-assignment-4-client.vercel.app',
+    },
+    {
+      title: 'RoomBridge',
+      description:
+        'RoomBridge is a meeting room booking website that offers real-time availability, instant confirmation, and flexible scheduling for modern conference spaces',
+      tech: ['Vite js', 'Node js', 'Express', 'Typescript'],
+      link: 'https://level-2-24-assignment-5-client.vercel.app',
+    },
+    {
+      title: 'S3 integration with EC2',
+      description:
+        'A Demo application to post All types of Media files using AWS s3, possible to upload audio video images pdf etc ',
+      tech: ['Vite js', 'Node js', 'Express', 'Typescript'],
+      link: 'https://s3-file-upload-akilinjamam.netlify.app',
+    },
+    
   ]
 
   return (
@@ -152,12 +175,14 @@ export default function Portfolio() {
                       </span>
                     ))}
                   </div>
-                  <Button
-                    variant="ghost"
-                    className="flex items-center gap-2 text-cyan-400"
-                  >
-                    View Project <ExternalLink size={16} />
-                  </Button>
+                  <Link href={`${project.link}`} target="_blank" rel="noopener noreferrer">
+                      <Button
+                        variant="ghost"
+                        className="flex items-center gap-2 text-cyan-400"
+                      >
+                        View Project <ExternalLink size={16} />
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             </motion.div>
