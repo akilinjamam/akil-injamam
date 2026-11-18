@@ -312,7 +312,10 @@ export default function Portfolio() {
               category: "Database",
               items: ["MongoDB", "Mongoose", "PostgreSQL", "Prisma"],
             },
-            { category: "Cloud", items: ["AWS", "S3", "EC2", "VPS"] },
+            {
+              category: "Cloud",
+              items: ["AWS", "S3", "EC2", "VPS", "CI/CD", "DOCKER", "LINUX"],
+            },
             {
               category: "Tools",
               items: [
